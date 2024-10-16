@@ -1,3 +1,4 @@
+<?php include_once("Bdd.php");?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
