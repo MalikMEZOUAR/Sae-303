@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Présentation de l'application">
-    <title>SAE - 303</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Jeu interactif : Quel produit est le plus sain ?">
+    <title>SAE-303</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="sources.html">Application</a></li>
-                <li><a href="sourc.html">Equipe</a></li>
+                <li><a href="equipe">Equipe</a></li>
                 <li><a href="sources.html">Sources</a></li>
             </ul>
         </nav>
@@ -23,6 +23,28 @@
         <section id="presentation">
             <h1>Présentation de l'Application</h1>
             <p>Cette application est conçue pour [objectif de l'application]. Elle a été développée dans le cadre de l'année universitaire [Année Universitaire], par la promotion [Promotion].</p>
+        </section>
+
+        <section id="jeu">
+            <h1>Quel produit est le plus sain ?</h1>
+            <p>Choisissez lequel de ces produits a le meilleur Nutri-Score :</p>
+
+            <div id="products-container">
+                <div id="product1" class="product">
+                    <h2 class="product-name">Produit 1</h2>
+                    <img class="product-image" src="placeholder.png" alt="Image du produit 1">
+                    <p class="product-nutriscore">Nutri-Score: N/A</p>
+                    <button id="choose-product1">Choisir ce produit</button>
+                </div>
+
+                <div id="product2" class="product">
+                    <h2 class="product-name">Produit 2</h2>
+                    <img class="product-image" src="placeholder.png" alt="Image du produit 2">
+                    <p class="product-nutriscore">Nutri-Score: N/A</p>
+                    <button id="choose-product2">Choisir ce produit</button>
+                </div>
+            </div>
+            <p id="result-message"></p>
         </section>
 
         <section id="equipe">
