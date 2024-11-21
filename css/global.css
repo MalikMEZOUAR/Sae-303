@@ -1,0 +1,81 @@
+/* couleurs globales */
+:root {
+    --couleur-fond-principal: #FFF5F8; 
+    --texte-principal: #333; 
+    --bouton-principal: #F48FB1; 
+    --bouton-principal-survol: #F06292; 
+    --bouton-secondaire: #81D4FA; 
+    --bouton-secondaire-survol: #4FC3F7; 
+    --couleur-carte: #E3F2FD; 
+    --couleur-accent: #F06292; 
+    --nutriscore-a: #008000; 
+    --nutriscore-b: #86c300;
+    --nutriscore-c: #ffd500; 
+    --nutriscore-d: #f88f00; 
+    --nutriscore-e: #e60000; 
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--couleur-fond-principal);
+    color: var(--texte-principal);
+    margin: 0;
+    text-align: center;
+
+}
+
+/* Header */
+header {
+    background-color: var(--couleur-carte);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo .logo {
+    width: 80px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.menu-navigation {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.menu-navigation li a {
+    text-decoration: none;
+    color: var(--bouton-principal-survol);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--couleur-carte);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1rem; 
+    color: var(--texte-principal); 
+    margin-bottom: 15px; 
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+    align-items: center; 
+}
+
+.footer-logos img {
+    max-width: 100px; 
+    height: auto; 
+}
+

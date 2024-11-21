@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un jeu interactif pour deviner le Nutri-Score d'un produit.">
+    <link rel="shortcut icon" href="img/logo-bonbon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/jeu.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Devinez le Nutri-Score</title>
+    <script defer src="javascript/jeu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-bonbon.png" alt="Logo du jeu" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu-navigation">
+                <li><a href="nutriscore.html">Nutri-Score</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p id="numero-question" class="numero-question">1 / 10</p>
+
+        <section id="bloc-produit" class="bloc-produit">
+            <div id="produit" class="produit">
+                <h2 class="nom-produit">Nom du Produit</h2>
+                <img class="image-produit" src="img/placeholder.png" alt="Image du produit">
+            </div>
+        </section>
+
+        <section id="choix-nutriscore" class="choix-nutriscore">
+            <p>Quel est le Nutri-Score de ce produit ?</p>
+            <div class="options">
+                <button class="btn-nutriscore score-a" data-score="a">A</button>
+                <button class="btn-nutriscore score-b" data-score="b">B</button>
+                <button class="btn-nutriscore score-c" data-score="c">C</button>
+                <button class="btn-nutriscore score-d" data-score="d">D</button>
+                <button class="btn-nutriscore score-e" data-score="e">E</button>
+            </div>
+        </section>
+
+        <p id="message-resultat" class="message-resultat"></p>
+        <button id="bouton-suivant" style="display: none;">Continuer</button>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">Arda Nigiz ｜ Joumana Laamal ｜ Lucas Leo ｜ Malik Mezouar</p>
+        <div class="footer-logos">
+            <img src="img/logo/CY-IUT_coul240.png" alt="Logo IUT">
+            <img src="img/logo/CY_Cergy_Paris_Universite_-_Logo.png" alt="Logo Université">
+        </div>
+    </footer>
+</body>
+</html>

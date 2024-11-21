@@ -1,0 +1,140 @@
+/* Conteneur principal */
+
+.jeu-section {
+     margin-top: 50px;
+    padding: 20px;
+    background-color: var(--couleur-carte);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jeu-section h1 {
+    font-size: 2.5rem;
+    color: var(--couleur-accent);
+    margin-bottom: 10px;
+}
+
+.jeu-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.numero-question{
+    color: var(--texte-principal);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* Produit */
+.produit {
+    background-color: var(--couleur-carte);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.produit img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.produit .nom-produit {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--couleur-accent);
+    margin-bottom: 10px;
+}
+
+/* Section de choix */
+.choix-nutriscore {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.choix-nutriscore p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Boutons Nutri-Score */
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-nutriscore {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--bouton-principal);
+    color: white;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-nutriscore:hover {
+    background-color: var(--bouton-principal-survol);
+    transform: scale(1.1);
+}
+
+.btn-nutriscore.score-a {
+    background-color: var(--nutriscore-a);
+}
+.btn-nutriscore.score-b {
+    background-color: var(--nutriscore-b);
+}
+.btn-nutriscore.score-c {
+    background-color: var(--nutriscore-c);
+}
+.btn-nutriscore.score-d {
+    background-color: var(--nutriscore-d);
+}
+.btn-nutriscore.score-e {
+    background-color: var(--nutriscore-e);
+}
+
+/* Message résultat */
+.message-resultat {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Bouton suivant */
+#bouton-suivant {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--bouton-secondaire);
+    color: white;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: none; 
+    justify-content: center;
+    gap: 15px;
+}
+
+#bouton-suivant:hover {
+    background-color: var(--bouton-secondaire-survol);
+    transform: scale(1.1);
+}
