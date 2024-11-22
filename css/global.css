@@ -15,6 +15,9 @@
     --nutriscore-e: #e60000; 
 }
 
+html, body{
+    height: 100%;
+}
 /* Corps de la page */
 body {
     font-family: 'Poppins', sans-serif;
@@ -22,7 +25,13 @@ body {
     color: var(--texte-principal);
     margin: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column ;
+}
 
+main{
+    flex: 1;
+    padding: 1% 0;
 }
 
 /* Header */
@@ -58,13 +67,11 @@ header {
 footer {
     background-color: var(--couleur-carte);
     padding: 10px 20px;
-    text-align: center;
 }
 
 .footer-text {
-    font-size: 1rem; 
     color: var(--texte-principal); 
-    margin-bottom: 15px; 
+    text-align: center;
 }
 
 .footer-logos {
@@ -72,10 +79,19 @@ footer {
     justify-content: center; 
     gap: 15px; 
     align-items: center; 
+    margin-top: 10px;
 }
 
 .footer-logos img {
     max-width: 100px; 
     height: auto; 
+}
+
+.lien_footer{
+    color: var(--bouton-principal);
+}
+
+.lien_footer:hover{
+    color: var(--bouton-principal-survol);
 }
 
