@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jeu interactif : Quel produit est le plus sain ?">
+    <meta name="description" content="Un jeu interactif pour connaitre les nutriscores de bonbons." /> 
+    <link rel="shortcut icon" href="img/logo-bonbon.ico" type="image/x-icon">
+    <link rel="icon" href="img/logo-bonbon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css"> 
     <title>Erreur 404 - Page non trouvée</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-bonbon.png" alt="Logo du jeu" class="logo">
+            </a>
+        </div>
+
         <nav>
-            <ul>
-                <li><a href="index.html" class="lien_nav">Accueil</a></li>
-                <li><a href="equipe" class="lien_nav">Equipe</a></li>
-                <li><a href="sources.html" class="lien_nav">Sources</a></li>
-                <li><a href="nutriscore.html" class="lien_nav">NutriScore</a></li>
+            <ul class="menu-navigation">
+                <li><a href="nutriscore.html">Nutriscore</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
         <section id="presentation">
@@ -26,20 +31,16 @@
             <p>La page que vous recherchez n'existe pas ou a été déplacée.</p>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <img src="img/logo/CY_Cergy_Paris_Universite_-_Logo.png" alt="Logo de l'Université" id="logo-universite">
-            <div>
-                <h2>Membres du Groupe</h2>
-                <ul class="membres">
-                    <li>Joumana Laamal</li>
-                    <li>Arda Nigiz</li>
-                    <li>Malik Mezouar</li>
-                    <li>Lucas Leo</li>
-                </ul>
-            </div>
-            <p>&copy; 2023-2026 Promotion BUT2 MMI</p>
+    
+    <footer class="footer">
+        <p class="footer-text">Arda Nigiz ｜ Joumana Laamal ｜ Lucas Leo ｜ Malik Mezouar</p>
+        <p class="footer-text">BUT MMI | Semestre 3</p>
+        <a href="https://fr.openfoodfacts.org/" class="lien_footer">D'où viennent nos données ?</a>
+        <div class="footer-logos">
+            <img src="img/logo/CY-IUT_coul240.png" alt="Logo IUT">
+            <img src="img/logo/CY_Cergy_Paris_Universite_-_Logo.png" alt="Logo Université">
         </div>
     </footer>
+    
 </body>
 </html>
